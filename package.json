@@ -81,7 +81,9 @@
   },
   "scripts": {
     "twbuild": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch",
-    "dev": "snowpack dev"
+    "dev": "snowpack dev",
+    "build": "npm install",
+    "run": ""
   },
   "keywords": [],
   "author": "",
