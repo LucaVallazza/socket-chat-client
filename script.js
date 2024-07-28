@@ -7,8 +7,8 @@ const form = document.getElementById("form");
 const roomName = document.getElementById("room-name");
 const generalBtn = document.getElementById("general-room-btn");
 
-const socket = io("http://localhost:3000");
-const userSocket = io("http://localhost:3000/user", {
+const socket = io(process.env.SOCKET_URL);
+const userSocket = io(`${process.env.SOCKET_URL}/user`, {
   auth: { token: "test" },
 });
 
